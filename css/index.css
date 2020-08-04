@@ -1,0 +1,15 @@
+#fundo{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #1C1B1B;
+    z-index: 1;
+}
+#container {
+    
+  
+    color: ghostwhite;
+    z-index: 2;
+     
+
+}

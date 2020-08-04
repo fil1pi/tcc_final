@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+  
+    padding: 0;
+    
+}
+body{
+    background-color: #0f0f0f;
+    
+}
+#check{
+    display: none;
+}
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.barra{
+    position: fixed;
+    background-color:#282828;
+    height: 100%;
+    width: 300px;
+    transition: all .2s linear;
+    left: -300px;
+    z-index: 1;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+nav a {
+   text-decoration: none;
+}
+.link{
+    background-color:#282828;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    transition: all .2s linear;
+    color:rgb(255, 255, 255);
+    border-bottom: 2px solid#282828;
+}
+.link:hover{
+    color:gray;
+}
+#check:checked ~ .barra{
+transform: translateX(300px);
+}
+.nav{
+  
+    padding-left: 60px;
+    
+}
+.ladonav{
+    padding-left: 900px;
+}
+container{
+    z-index: 2;
+    
+   
+}
+.card{
+    color: honeydew;
+    background-color:#282828;
+    padding: 10px;
+}
+
+h1 ,h3,p{
+    color:honeydew ;
+
+}
