@@ -1,7 +1,7 @@
 <?php
-require_once("../view/cabecalho.php");
+require_once("../view/Cabecalho.php");
 unset($_SESSION["nome"]);
-header("location: ../view/login.php");
+header("location: ../view/Login.php");
 
 #filipi
 

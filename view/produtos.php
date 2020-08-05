@@ -1,7 +1,7 @@
 <?php
-require_once "cabecalho.php";
-require_once "../Controllers/conexao-banco.php";
-require_once '../Controllers/protege.php';
+require_once "Cabecalho.php";
+require_once "../Controllers/Conexao_Banco.php";
+require_once '../Controllers/Protege.php';
 
 $usu = $_SESSION["nome"] ;
 
@@ -32,9 +32,9 @@ while ($umvalor != null) {
   <label for   = "check" id    = "icone"><img src = "../imagens/icone.png"></label>
   <div   class = "barra">
     <nav>
-      <a  href  = "gestao.php"><div class   = "link">Home</div></a>
+      <a  href  = "Gestao.php"><div class   = "link">Home</div></a>
       <hr class = "featurette-divider">
-      <a  href  = "produtos.php"><div class = "link">Produtos</div></a>
+      <a  href  = "Produtos.php"><div class = "link">Produtos</div></a>
       <hr class = "featurette-divider">
       
       <div class = "container">
@@ -79,13 +79,13 @@ while ($umvalor != null) {
                 <?= $_SESSION["nome"]; ?>
   </button>
   <div class = "dropdown-menu" aria-labelledby = "dropdownMenu2">
-  <a   class = "dropdown-item" href            = "../Controllers/logout.php">Logout</a>
+  <a   class = "dropdown-item" href            = "../Controllers/Logout.php">Logout</a>
    
   </div>
 </div>
 
     <?php else: ?>
-        <a      href  = "login.php" style           = "color: inherit; text-decoration: none">
+        <a href  = "Login.php" style           = "color: inherit; text-decoration: none">
         <button type  = "button" class              = "btn btn-light mr-sm-2">
         <i      class = "fa fa-sign-in" aria-hidden = "true"></i>
                 Fazer login
@@ -190,7 +190,7 @@ while ($umvalor != null) {
                 
               </form>
               <br>
-              <form action="produtos.php" method="POST">
+              <form action="Produtos.php" method="POST">
                   <button type = "submit" class = "btn btn-block btn-outline-danger">
              
               Cancelar</button>
@@ -276,6 +276,6 @@ endforeach?>
         </div>
         </div>
       
-      <?php require_once 'rodape.php' ?>
+      <?php require_once 'Rodape.php' ?>
     </body>
   </html>

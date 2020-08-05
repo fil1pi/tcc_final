@@ -1,5 +1,5 @@
 <?php
-    require_once("conexao-banco.php");
+    require_once("Conexao_Banco.php");
 
     $id      = $_POST["idv"];
     $sql     = "delete from usuarios where id=?";

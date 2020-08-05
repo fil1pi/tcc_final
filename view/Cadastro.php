@@ -1,6 +1,6 @@
 <?php
-require_once('cabecalho.php');
-require_once('../Controllers/protege.php');
+require_once('Cabecalho.php');
+require_once('../Controllers/Protege.php');
 ?>
 <link rel   = "stylesheet" href = "../css/css.css">
 <div  class = "card" id         = "telalogin">
@@ -48,5 +48,5 @@ require_once('../Controllers/protege.php');
 </div>
 <div id = "aleatorio"></div>
 <?php
-require_once('footer.php');
+require_once('Footer.php');
 ?>

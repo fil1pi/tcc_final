@@ -1,11 +1,11 @@
 <?php
-require_once("../view/cabecalho.php");
+require_once("../view/Cabecalho.php");
 
-if (isset($_SESSION["email"]) == false && isset($_SESSION["id"]) == false) {
+if (empty($_SESSION["email"])  && empty($_SESSION["id"]) ) {
 
 
   $_SESSION["ErrorLogin"] ="Usuario deslogado ";
-  header('location: ../view/login.php');
+  header('location: ../view/Login.php');
 #filipi
 }
 

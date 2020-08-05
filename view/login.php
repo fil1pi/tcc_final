@@ -1,5 +1,5 @@
 <?php
-require_once('cabecalho.php');
+require_once('Cabecalho.php');
 
 ?>
 <link rel   = "stylesheet" href = "../css/css.css">
@@ -40,6 +40,10 @@ require_once('cabecalho.php');
                             }
                             
                             ?>
+                             <?php
+                          
+                            
+                            ?>
                        </p>
                         <label for  = "email"></label>
                         <input type = "text" class = " rounded-pill form-control" id = "email"name = "email" placeholder = "Email">
@@ -48,18 +52,18 @@ require_once('cabecalho.php');
                     <label for   = "senha"></label>
                     <input type  = "password" class = " rounded-pill form-control" id = "senha" name = "senha" placeholder = "Senha">
                     </div>
-                    
+                    <a href = "Recupera_senha.php"><p>Esqueceu a senha  ?</p></a>
                     <button type = "submit" class = "btn btn-outline-primary btn-lg btn-block" name = "butaum">Login</button>
                     <br>
                 <br>
                 </form>
                 
-                    <a href = "cadastro.php"><p>Ainda não possui conta ?</p></a>
+                    <a href = "Cadastro.php"><p>Ainda não possui conta ?</p></a>
                     
 
   </div>
 </div>
 <div id = "aleatorio"></div>
 <?php
-require_once('footer.php');
+require_once('Footer.php');
 ?>

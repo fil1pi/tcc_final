@@ -1,7 +1,7 @@
 <?php
 
-require_once("conexao-banco.php");
-require_once("../view/cabecalho.php");
+require_once("Conexao_Banco.php");
+require_once("../view/Cabecalho.php");
 
 
 
@@ -36,7 +36,7 @@ $_SESSION["nome"]  = $vetorUMRegistro["nome"];
     header("location: ../view/Homeadm.php");
    } else {
       
-    header("location: ../view/gestao.php");
+    header("location: ../view/Gestao.php");
    }
    #filipi
 
@@ -46,7 +46,7 @@ $_SESSION["nome"]  = $vetorUMRegistro["nome"];
    $_SESSION["email"]    != $vetorUMRegistro["email"];
    $_SESSION["nome"]     != $vetorUMRegistro["nome"];
    $_SESSION["ErroLogin"] = "Erro de login ou senha.";
-header("location: ../view/login.php");
+header("location: ../view/Login.php");
 }
 
 

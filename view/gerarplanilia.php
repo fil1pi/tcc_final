@@ -1,7 +1,7 @@
 <?php
-require_once("../Controllers/conexao-banco.php");
-require_once('cabecalho.php');
-require_once('../Controllers/protege.php');
+require_once("../Controllers/Conexao_Banco.php");
+require_once('Cabecalho.php');
+require_once('../Controllers/Protege.php');
 $usu=$_SESSION["nome"];
 ?>
 <!DOCTYPE html>

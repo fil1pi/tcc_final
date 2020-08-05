@@ -1,6 +1,6 @@
 <?php
-require_once("../view/cabecalho.php");
-require_once("conexao-banco.php");
+require_once("../view/Cabecalho.php");
+require_once("Conexao_Banco.php");
 
 if ((isset($_POST["id"])) && (isset($_POST["id"])=='id') ) {
    
@@ -44,7 +44,7 @@ $sql     = "insert into usuarios( email,senha,nome) values(?,?,?)";
 $sqlprep = $conexao->prepare($sql);
 $sqlprep->bind_param("sss" ,$email,$md5,$nome);
 if ($sqlprep->execute()) {
-    header("location: ../view/login.php");
+    header("location: ../view/Login.php");
 } else {
     header("location: ../view/404.php");
 }

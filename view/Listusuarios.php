@@ -1,7 +1,7 @@
 <?php
-require_once("../Controllers/conexao-banco.php");
-require_once('cabecalho.php');
-require_once('../Controllers/protege.php');
+require_once("../Controllers/Conexao_Banco.php");
+require_once('Cabecalho.php');
+require_once('../Controllers/Protege.php');
 
 $sql            = " SELECT * FROM  usuarios ";
 $resultado      = mysqli_query($conexao, $sql);
@@ -82,12 +82,12 @@ while ($umvalor != null) {
                 <?= $_SESSION["nome"]; ?>
   </button>
   <div class = "dropdown-menu" aria-labelledby = "dropdownMenu2">
-  <a   class = "dropdown-item" href            = "../Controllers/logout.php">Logout</a>
+  <a   class = "dropdown-item" href            = "../Controllers/Logout.php">Logout</a>
    
   </div>
 </div>
     <?php else: ?>
-        <a      href  = "login.php" style           = "color: inherit; text-decoration: none">
+        <a href  = "Login.php" style           = "color: inherit; text-decoration: none">
         <button type  = "button" class              = "btn btn-light mr-sm-2">
         <i      class = "fa fa-sign-in" aria-hidden = "true"></i>
                 Fazer login

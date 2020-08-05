@@ -1,7 +1,7 @@
 <?php
-require_once("../Controllers/conexao-banco.php");
-require_once('cabecalho.php');
-require_once('../Controllers/protege.php');
+require_once("../Controllers/Conexao_Banco.php");
+require_once('Cabecalho.php');
+require_once('../Controllers/Protege.php');
 $usu = $_SESSION['nome'];
 
 
@@ -84,9 +84,9 @@ while($dados = mysqli_fetch_array($buscar)){
   <label for   = "check" id    = "icone"><img src = "../imagens/icone.png"></label>
   <div   class = "barra">
     <nav>
-      <a  href  = "gestao.php"><div class   = "link">Home</div></a>
+      <a  href  = "Gestao.php"><div class   = "link">Home</div></a>
       <hr class = "featurette-divider">
-      <a  href  = "produtos.php"><div class = "link">Produtos</div></a>
+      <a  href  = "Produtos.php"><div class = "link">Produtos</div></a>
       <hr class = "featurette-divider">
     
       <div class = "container">
@@ -133,19 +133,16 @@ while($dados = mysqli_fetch_array($buscar)){
                  <?= $_SESSION["nome"]; ?>
   </button>
   <div class = "dropdown-menu" aria-labelledby = "dropdownMenu2">
-  <a   class = "dropdown-item" href            = "../Controllers/logout.php">Logout</a>
-   
+  <a   class = "dropdown-item" href            = "../Controllers/Logout.php">Logout</a>
+  <a   class = "dropdown-item" href            = "../view/UpdateUsuario.php">Atualizar dados</a>
   </div>
 </div>
     <?php else: ?>
-        <a      href  = "login.php" style           = "color: inherit; text-decoration: none">
-        <button type  = "button" class              = "btn btn-light mr-sm-2">
-        <i      class = "fa fa-sign-in" aria-hidden = "true"></i>
-                Fazer login
-            </button>
-        </a>
+    
 
-    <?php
+    <?php 
+   
+     header("location: ../view/Login.php");
     endif;
     ?>
                   
@@ -226,10 +223,10 @@ while($dados = mysqli_fetch_array($buscar)){
           
           <br>
           <br>
-          <a href = "gerarplanilia.php"><button class = "btn btn-outline-success">Gerar Planilha</button></a>
+          <a href = "Gerarplanilia.php"><button class = "btn btn-outline-success">Gerar Planilha</button></a>
          
 
-          <a href = "produtos.php"><button class = "btn btn-outline-success">Vender Produtos</button></a>
+          <a href = "Produtos.php"><button class = "btn btn-outline-success">Vender Produtos</button></a>
           <br>
           <br>
           

@@ -1,5 +1,5 @@
 <?php
-require_once('cabecalho.php');
+require_once('Cabecalho.php');
 
 
 ?>
@@ -52,14 +52,11 @@ require_once('cabecalho.php');
                                        Recebe esse nome pois é realizada por grupos de famílias (pequenos agricultores e
                                        alguns empregados).
                                        A colheita dos produtos serve de alimentos para eles e ainda, para o consumo de
-                                       parte da população..
-                                       
-                                       
-                                       </h2>
+                                       parte da população..</h2>
 
                                    </p> 
 
-                                   <a class = "text-center" href = "login.php"><button type = "button" class = "btn btn-outline-primary btn-lg btn-block">Ir para o Sistema</button></a>
+                                   <a class = "text-center" href = "Login.php"><button type = "button" class = "btn btn-outline-primary btn-lg btn-block">Ir para o Sistema</button></a>
                                    
                                    <br>
                                    <br>
@@ -133,6 +130,7 @@ require_once('cabecalho.php');
                                             permite aos agrônomos fazer 
                                            levantamento dados que podem ser monitorados 
                                            e rastreados juntos .
+                                           
                                     </h3>
                                 </div> 
 

@@ -1,6 +1,6 @@
 <?php
-require_once("../view/cabecalho.php");
-require_once("conexao-banco.php");
+require_once("../view/Cabecalho.php");
+require_once("Conexao_Banco.php");
 
 if ((isset($_POST["id"])) && (isset($_POST["id"])=='id') ) {
     

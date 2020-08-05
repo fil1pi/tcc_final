@@ -1,6 +1,6 @@
 <?php
-require_once("../view/cabecalho.php");
-require_once("conexao-banco.php");
+require_once("../view/Cabecalho.php");
+require_once("Conexao_Banco.php");
 
 if ((isset($_POST["id"])) && (isset($_POST["id"])=='id') ) {
     
@@ -21,12 +21,12 @@ $produtor = $_SESSION['nome'];
 
 if (empty($nome)) {
     $_SESSION["ErrorCampo"] = "Todos os campos devem ser preenchidos ";
-    header("location: ../view/produtos.php");
+    header("location: ../view/Produtos.php");
     # code...
 }else if ((empty($preco)) && empty($qtde)) {
 
      $_SESSION["ErrorCampo"] = "Todos os campos devem ser preenchidos ";
-    header("location: ../view/produtos.php");
+    header("location: ../view/Produtos.php");
    
 }else{
   
@@ -39,7 +39,7 @@ $sqlprep = $conexao->prepare($sql);
 $total   = $qtde*$preco;
 $sqlprep->bind_param("sdids" ,$nome,$preco,$qtde,$total,$produtor);
 if ($sqlprep->execute()) {
-    header("location: ../view/produtos.php");
+    header("location: ../view/Produtos.php");
 } else {
     header("location: ../view/404.php");
 
@@ -47,7 +47,7 @@ if ($sqlprep->execute()) {
 }
 }else{
     $_SESSION["Errorvali"] = "O campo Preço de produção deve receber apenas numeros ! ";
-    header("location: ../view/produtos.php");
+    header("location: ../view/Produtos.php");
 }
 }
 
