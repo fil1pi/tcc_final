@@ -52,7 +52,10 @@ require_once('cabecalho.php');
                                        Recebe esse nome pois é realizada por grupos de famílias (pequenos agricultores e
                                        alguns empregados).
                                        A colheita dos produtos serve de alimentos para eles e ainda, para o consumo de
-                                       parte da população..</h2>
+                                       parte da população..
+                                       
+                                       
+                                       </h2>
 
                                    </p> 
 
